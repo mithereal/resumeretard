@@ -1,0 +1,2 @@
+-module(settings,[Id,Name,Value]).
+-compile(export_all).

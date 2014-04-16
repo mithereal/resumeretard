@@ -14,10 +14,11 @@
 % Note that routing across applications results in a 302 redirect.
 
 % Front page
-% {"/", [{controller, "world"}, {action, "hello"}]}.
+ {"/", [{controller, "main"}, {action, "index"}]}.
+ {"/version", [{controller, "application"}, {action, "version"}]}.
 
 % 404 File Not Found handler
-% {404, [{controller, "world"}, {action, "lost"}]}.
+ {404, [{controller, "application"}, {action, "lost"}]}.
 
 % 500 Internal Error handler (only invoked in production)
-% {500, [{controller, "world"}, {action, "calamity"}]}.
+ {500, [{controller, "application"}, {action, "calamity"}]}.

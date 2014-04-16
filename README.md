@@ -1,6 +1,6 @@
 # Resume Retard
 
-A career search engine written in Erlang
+A career search engine (job bank) written in Erlang
 
 
 Credits
