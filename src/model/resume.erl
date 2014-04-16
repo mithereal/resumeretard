@@ -1,0 +1,2 @@
+-module(resume,[Id,ResumeTitle]).
+-compile(export_all).

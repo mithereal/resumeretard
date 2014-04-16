@@ -1,0 +1,2 @@
+-module(profile,[Id,Username]).
+-compile(export_all).
