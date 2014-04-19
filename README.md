@@ -10,12 +10,12 @@ Author: Jason Clark (mithereal@gmail.com)
 
 <a href="https://plus.google.com/106435649138230430305/posts">
   <img alt="Follow me on Google+"
-       src="https://github.com/mithereal/mithereal.github.io/tree/master/image/g+64.png" />
+       src="https://github.com/mithereal/mithereal.github.io/tree/master/image/g+64.png?raw=true" />
 </a>
 
 <a href="http://linkedin.com/in/mithereal">
   <img alt="Follow me on LinkedIn"
-       src="https://github.com/mithereal/mithereal.github.io/tree/master/image/linkedin.png" />
+       src="https://github.com/mithereal/mithereal.github.io/tree/master/image/linkedin.png?raw=true" />
 </a>
 
 License
