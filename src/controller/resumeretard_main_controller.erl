@@ -2,7 +2,7 @@
 -compile(export_all).
 
 index('GET', []) ->
-    {output, "<strong>index</strong>"}.
+    {ok,  []}.
 
 
 
