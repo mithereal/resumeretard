@@ -20,8 +20,8 @@ echo "...Building Chicago Boss..."
 make
 cd ${STARTDIR}
 
-sed s_/home/mithereal/ChicagoBoss.[[:digit:]]*.[[:digit:]]*.[[:digit:]]*_${COMPILERDIR}_ boss.config > bossmod.config
-sed s_/home/mithereal/ChicagoBoss.[[:digit:]]*.[[:digit:]]*.[[:digit:]]*_${COMPILERDIR}_ rebar.config > rebarmod.txt
+sed s_/home/mithereal/ChicagoBoss.[[:digit:]]*.[[:digit:]]*.[[:digit:]]*_${COMPILERDIR}_ boss.config > boss.config
+sed s_/home/mithereal/ChicagoBoss.[[:digit:]]*.[[:digit:]]*.[[:digit:]]*_${COMPILERDIR}_ rebar.config > rebar.txt
 ./rebar get-deps compile
 
 
