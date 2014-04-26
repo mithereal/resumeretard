@@ -11,12 +11,12 @@ else
 ## fetch and install chicagoboss
 cd ~
 wget https://github.com/ChicagoBoss/ChicagoBoss/archive/v"${VERSION}".tar.gz
+tar -xvzf v"${VERSION}".tar.gz
 fi
 
-tar -xvzf v"${VERSION}".tar.gz
 cd ChicagoBoss-"${VERSION}"
 COMPILERDIR=$(pwd)
-echo "Building Chicago Boss"
+echo "...Building Chicago Boss..."
 make
 cd ${STARTDIR}
 
