@@ -4,12 +4,11 @@ VERSION=0.8.10
 echo "Enter the Chicago Boss Dir (if no dir is selected we will download chicagoboss into $HOME/chicagoboss)"
 read COMPILERDIR
 
-if [ "${COMPILERDIR}" < 3 ]
+if [ "${COMPILERDIR}" > 3 ]
 then
-## fetch and install chicagoboss
 cd ${COMPILERDIR}
-wget https://github.com/ChicagoBoss/ChicagoBoss/archive/v"${VERSION}".tar.gz
 else
+## fetch and install chicagoboss
 cd ~
 wget https://github.com/ChicagoBoss/ChicagoBoss/archive/v"${VERSION}".tar.gz
 fi
