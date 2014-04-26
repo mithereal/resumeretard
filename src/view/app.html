@@ -6,10 +6,20 @@
 	<meta name="robots" content="noydir" />
 	<meta name="Description" content="submit your resume to apply for jobs online." />
 	<meta name="Keywords" content="local jobs, local job search, local job listings, find local jobs, career" />
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width">
 	<meta http-equiv="Content-Style-Type" content="text/css" />
 	<meta http-equiv="Content-Script-Type" content="text/javascript"/>
 	<meta property="fb:page_id" content="page_id will go here" />		
-	<link href="/static/css/app.css" media="all" rel="stylesheet" type="text/css"/>
+	<link href="/static/css/ionic.css" rel="stylesheet">
+	<link href="/static/css/app.css" media="all" rel="stylesheet" type="text/css"/>	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.15/angular.min.js"></script>
+
+    <script src="/static/js/app.js"></script>
+    <script src="/static/js/controllers.js"></script>
+    <script src="/static/js/directives.js"></script>
+	
+
     <title>Resume Retard - an Erlang Job Bank</title>
     <!--[if gte IE 9]>
   <style type="text/css">
@@ -20,7 +30,7 @@
 <![endif]-->
   </head>
   
-  <body>
+  <body ng-app="starter" animation="slide-left-right-ios7">
 	  <div id="site-header">
 		  	<a href="https://github.com/mithereal/resumeretard">
 			<img width="60" height="45" src="/static/sitelogo.png">
@@ -30,6 +40,11 @@
 				<button id="login-button" value="register" type="button"> Sign-Up </button>
 				
 			</div>
+			  <div class="header-links">
+			<ul>
+				<li class="header-link"><a href="jobpost">Post a Job</a></li>
+				<li class="header-link"><a href="jobsearch">Find a Job</a></li>
+			</ul>
 			
 	 </div>
 	 <div id ="content-wrapper">
@@ -37,6 +52,7 @@
     {% block content %}{% endblock %}
     
     </div>
+  
   <footer>
 	  <div class="site-links">
 			<ul>
