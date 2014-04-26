@@ -16,12 +16,20 @@
   <body>
 	  <div id="site-header">
 		  	<a href="https://github.com/mithereal/resumeretard">
-	<img width="60" height="45" src="/static/sitelogo.png">
-	</a>
+			<img width="60" height="45" src="/static/sitelogo.png">
+			</a>
+			<div id="header-account">
+				<button id="login-button" value="login" type="button"> Login </button>
+				<button id="login-button" value="register" type="button"> Sign-Up </button>
+				
+			</div>
+			
 	 </div>
-	 
+	 <div id ="content-wrapper">
+	
     {% block content %}{% endblock %}
     
+    </div>
   <footer>
 	  <div class="site-links">
 			<ul>

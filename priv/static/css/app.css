@@ -1,13 +1,35 @@
 .site-links {
     border-top: 1px solid #CCCCCC;
-    clear: left;
-    margin-top: 25px;
+    
+    margin: auto;
     padding-top: 10px;
 }
 .site-links li {
     display: inline;
 }
 #site-header{
+border-bottom: 1px solid #CCCCCC;
+margin-bottom:0.8em;
+}
+#header-account{
+	position:absolute; 
+	right: 10px;
+	top:2px;
+}
+#content-wrapper{
+	position:absolute;
+	min-width:80%;
+}
+footer{
+	position:absolute;
+	bottom:0px;
+	width:100%;
+}
+body{ 
 
-
+}
+.copyright{
+	position:absolute;
+	bottom:0ex; 
+	right: 15px;
 }
