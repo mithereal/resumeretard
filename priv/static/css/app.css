@@ -12,7 +12,6 @@ margin: auto;
 padding-top: 10px;
 }
 .site-links li {
-border: 2px solid #800000;
 display: inline;
 }
 #site-header{
@@ -45,6 +44,9 @@ text-align:center;
 	display:inline-block;
 	list-style-type: none;
 	background-color:#2855A2;
+}
+.header-link:hover{
+	background-color:#2FB62F;
 }
 .header-link a{
 text-decoration: none;
