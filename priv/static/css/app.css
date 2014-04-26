@@ -9,26 +9,31 @@
 }
 #site-header{
 border-bottom: 1px solid #CCCCCC;
-margin-bottom:0.8em;
+margin-bottom:2px;
+
 }
 #header-account{
 	position:absolute; 
 	right: 10px;
-	top:2px;
+	top:10px;
 }
 #content-wrapper{
 	position:absolute;
-	min-width:80%;
+	min-width:100%;
+	min-height:80%;
+	background-color:#BFBFBF;
 }
 footer{
+
 	position:absolute;
 	bottom:0px;
 	width:100%;
 }
 body{ 
-
+background-color:#000000;
 }
 .copyright{
+color:#FF0000;
 	position:absolute;
 	bottom:0ex; 
 	right: 15px;
