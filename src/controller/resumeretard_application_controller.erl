@@ -5,5 +5,7 @@ lost('GET', []) ->
     {ok, [{message,"unable to find page"}]}.
     
 version('GET', []) ->
-Version = boss_db:find(settings, [{name, 'equals', "version"}]),
-    {ok, [{version,Version}]}.
+DATA = boss_db:find(settings, [{name, 'equals', "version"}]),
+RECORD= hd(DATA),
+VALUE=RECORD:value(),
+    {ok, [{version,VALUE}]}.

@@ -31,9 +31,10 @@
   </head>
   
   <body ng-app="resumeretard" ng-strict-di>
+	
 	  <div id="site-header" ng-controller="resumeretardHeaderController">
 		  <div id="sitelogo">
-		  	<a href="https://github.com/mithereal/resumeretard">
+		  	<a href="/">
 			<img src="/static/sitelogo.png">
 			</a>
 			</div>
@@ -51,12 +52,13 @@
 			</ul>
 			
 	 </div>
+	 
 	 <div id ="content-wrapper">
-	
+	<div id="lgutter"></div> 
     {% block content %}{% endblock %}
-    
+    <div id="rgutter"></div>
     </div>
-  
+
   <footer>
 	  <div class="site-links">
 			<ul>
@@ -78,5 +80,6 @@
    <script src="/static/js/app.js"></script>
    <script src="/static/js/controllers.js"></script>
    <script src="/static/js/directives.js"></script>
+    
   </body>
 </html>

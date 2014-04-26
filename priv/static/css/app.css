@@ -1,10 +1,26 @@
 body{ 
 background-color:#000F2D;
+cursor:  url(/static/cursor/pointer.ani),  url(/static/cursor/pointer.cur), auto;
 }
 footer{
 	position:absolute;
 	bottom:0px;
 	width:100%;
+}
+a{
+	color:#F9F2F2;
+	text-decoration:none;
+	cursor:  url(/static/cursor/pointer.ani),  url(/static/cursor/pointer.cur), auto;
+}
+visited{
+	color:#F9F2F2;
+	text-decoration:none;
+	cursor:  url(/static/cursor/pointer.ani),  url(/static/cursor/pointer.cur), auto;
+}
+a:hover{
+	color:#FFB776;
+	font-size:115;
+	cursor:  url(/static/cursor/pointer.ani),  url(/static/cursor/pointer.cur), auto;
 }
 .site-links {
 border: 2px solid #800000;
@@ -52,6 +68,7 @@ font-size:150%;
 color:#FFFFFF;
 }
 #content-wrapper{
+color:#F5F5F5;
 	position:absolute;
 	min-width:100%;
 	min-height:80%;
@@ -90,4 +107,18 @@ border:1px solid #f2b400; -webkit-border-radius: 3px; -moz-border-radius: 3px;bo
 }
 #sitelogo{
 	padding-top: 0.5em;
+}
+#versioninfo{
+	margin:2em;
+	
+}
+#lgutter{
+	#background:url(/static/lgutter.png);
+	#width:100px;
+	#height:100%;
+}
+#rgutter{
+	#background:url(/static/rgutter.png);
+	#width:100px;
+	#height:100%;
 }
