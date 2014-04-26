@@ -25,11 +25,9 @@ margin-bottom:2px;
 	top:10px;
 }
 .header-links{
-	position:absolute; 
-	left: 10em;
-	top:10px;
-	display:inline-block;
-	list-style-type: none;
+	 position: absolute;
+    right: 15em;
+    top: 15px;
 }
 .header-link{
 border-radius: 8px; 
@@ -89,4 +87,7 @@ border:1px solid #f2b400; -webkit-border-radius: 3px; -moz-border-radius: 3px;bo
 }
 .selected{
 	background-color:#2FB62F;
+}
+#sitelogo{
+	padding-top: 0.5em;
 }
