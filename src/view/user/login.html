@@ -3,6 +3,7 @@
 {% if error %}
 <font color="red">{{ error }}</font>
 {% endif %}
+<div id="loginblock">
 <form method="post">
 Name:<br />
 <input name="name" /><br /><br />
@@ -11,6 +12,7 @@ Password:<br />
 <input name="password" type="password" /><br /><br />
 
 <input type="submit" value="Log in" />
-<input type="hidden" name="redirect" value="{{ redirect|default_if_none:"/voter/list" }}" />
+
 </form>
+</div>
 {% endblock %}

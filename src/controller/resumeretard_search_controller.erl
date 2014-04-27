@@ -1,12 +1,11 @@
--module(resumeretard_main_controller, [Req]).
+-module(resumeretard_search_controller, [Req]).
 -compile(export_all).
 
 index('GET', []) ->
     {ok,  []}.
     
-sitemap('GET', []) ->
+jobs('GET', []) ->
     {ok,  []}.
-
 
 
 

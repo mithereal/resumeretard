@@ -122,3 +122,10 @@ border:1px solid #f2b400; -webkit-border-radius: 3px; -moz-border-radius: 3px;bo
 	#width:100px;
 	#height:100%;
 }
+#loginblock{
+	position:absolute;
+	right:15px;
+	top:15px;
+	text-align:right;
+	width:20%;
+}
