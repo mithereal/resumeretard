@@ -19,7 +19,8 @@
  {"/search/", [{controller, "search"}, {action, "index"}]}.
  {"/recruit/", [{controller, "recruit"}, {action, "index"}]}.
  {"/login", [{controller, "user"}, {action, "login"}]}.
- {"/signup", [{controller, "registeration"}, {action, "index"}]}.
+ {"/signup", [{controller, "registration"}, {action, "index"}]}.
+ {"/sign-up", [{controller, "registration"}, {action, "index"}]}.
  {"/sitemap", [{controller, "main"}, {action, "sitemap"}]}.
  {"/information/", [{controller, "page"}, {action, "index"}]}.
 

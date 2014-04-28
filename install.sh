@@ -1,7 +1,7 @@
 #!/bin/bash
 STARTDIR=$(pwd)
 VERSION=0.8.10
-echo "Enter the Chicago Boss Dir (if no dir is selected we will download chicagoboss into $HOME/ChicagoBoss-0.8.10)"
+echo "Enter the Chicago Boss Dir (if no dir is selected we will download chicagoboss into $HOME/ChicagoBoss-x.x.x)"
 read COMPILERDIR
 
 if [ "${COMPILERDIR}" > 3 ]
@@ -21,7 +21,7 @@ make
 cd ${STARTDIR}
 
 sed s_/home/mithereal/ChicagoBoss.[[:digit:]]*.[[:digit:]]*.[[:digit:]]*_${COMPILERDIR}_ boss.config > boss.config
-sed s_/home/mithereal/ChicagoBoss.[[:digit:]]*.[[:digit:]]*.[[:digit:]]*_${COMPILERDIR}_ rebar.config > rebar.txt
+sed s_/home/mithereal/ChicagoBoss.[[:digit:]]*.[[:digit:]]*.[[:digit:]]*_${COMPILERDIR}_ rebar.config > rebar.config
 ./rebar get-deps compile
 
 
