@@ -17,6 +17,7 @@
  {"/", [{controller, "main"}, {action, "index"}]}.
  {"/version", [{controller, "application"}, {action, "version"}]}.
  {"/search/", [{controller, "search"}, {action, "index"}]}.
+ {"/search/resumes", [{controller, "search"}, {action, "portfolios"}]}.
  {"/recruit/", [{controller, "recruit"}, {action, "index"}]}.
  {"/login", [{controller, "user"}, {action, "login"}]}.
  {"/register", [{controller, "registration"}, {action, "signup"}]}.

@@ -1,0 +1,2 @@
+-module(keywords,[Id,Word,Hits]).
+-compile(export_all).

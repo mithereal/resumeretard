@@ -1,0 +1,2 @@
+-module(portfolio,[Id,Title,Headline,Description,Ownerid,Keywordsgroup,Categoriesgroup,Pastjob,Targetjobtype,Resume]).
+-compile(export_all).

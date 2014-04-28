@@ -1,0 +1,2 @@
+-module(category,[Id,Name,Jobtype]).
+-compile(export_all).

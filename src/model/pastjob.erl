@@ -1,0 +1,2 @@
+-module(pastjob,[Id,RolodexId]).
+-compile(export_all).

@@ -201,3 +201,17 @@ text-align:left;
 #registersubmit{
 	margin-left: 20em;
 }
+#search{
+	position:absolute;
+	left:16em;
+	z-index:3;
+	padding-top:1em;
+}
+#searchinput{
+	width:30em;
+	height:1.5em;
+}
+#mapcontainer{ 
+margin-top:3em;
+margin-left:1.5em;
+}

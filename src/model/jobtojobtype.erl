@@ -1,0 +1,2 @@
+-module(jobtojobtype,[Id,Type]).
+-compile(export_all).
