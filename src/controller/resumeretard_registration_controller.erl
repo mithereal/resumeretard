@@ -4,5 +4,5 @@
 index('GET', []) ->
     {ok,  []}.
 
-
-
+signup('POST', []) ->
+    {ok,  []}.

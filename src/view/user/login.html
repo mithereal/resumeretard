@@ -4,14 +4,14 @@
 <font color="red">{{ error }}</font>
 {% endif %}
 <div id="loginblock">
-<form method="post">
-Name:<br />
-<input name="name" /><br /><br />
+<form method="post" action="/login">
+Name<br />
+<input name="username" /><br /><br />
 
-Password:<br />
+Password<br />
 <input name="password" type="password" /><br /><br />
 
-<input type="submit" value="Log in" />
+<button id="registersubmit" class="button">Log in</button>
 
 </form>
 </div>
