@@ -6,7 +6,7 @@ index('GET', []) ->
     
 jobs('GET', []) ->
 	Jobs=boss_db:find(job, []),
-    {ok,  [jobs,Jobs]}.
+    {ok,  [{jobs,Jobs}]}.
 
 
 
