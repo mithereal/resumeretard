@@ -24,7 +24,6 @@ font-size:115;
 cursor:  url(/static/cursor/pointer.ani),  url(/static/cursor/pointer.cur), auto;
 }
 .site-links {
-border: 2px solid #800000;
 margin: auto;
 padding-top: 10px;
 }

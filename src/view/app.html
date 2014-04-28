@@ -39,18 +39,26 @@
 			</a>
 			</div>
 			<div id="header-account">
-				<button id="login-button" class="hdrbtn" value="login" type="button"> Login </button>
-				<button id="register-button" class="hdrbtn" value="register" type="button"> Sign-Up </button>
+				{% if user %}
+				<p> Welcome {{ user.username }} </p>
+				{% endif %}
 				
+				{% if not user %}
+				<a href="/login">
+				<button id="login-button" class="hdrbtn" value="login" type="button"> Login </button>
+				</a>
+				<a href="/sign-up">
+				<button id="register-button" class="hdrbtn" value="register" type="button"> Sign-Up </button>
+				</a>
+				{% endif %}
 			</div>
-			  <div class="header-links">
+			
+			<div class="header-links">
 			<ul>
 				<li class="header-link selected"><a href="/search/jobs">Search / $</a></li>
 				<li class="header-link"><a href="/recruit/">Post em Job</a></li>
 				<li class="header-link"><a href="/search/resumes">Find der Werker</a></li>
-				
 			</ul>
-			
 	 </div>
 	 
 	 <div id ="content-wrapper">

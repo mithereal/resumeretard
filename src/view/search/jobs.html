@@ -1,7 +1,21 @@
 {% extends "app.html" %}
 {% block content %}
+
 <div class="error">
  {{ message }}
+</div> 
+
+<div class="pagename">
+	{{ page.name }}
 </div>
-search job content goes here
+{{ Jobs }}
+{% for job in jobs %}
+<div class="jobsquare">
+<div class="jobsearchthumb"><img src="{{ job.logo }}"></div>
+<div class="jobsearchname">{{ job.name }}</div>
+<div class="jobsearchdescription">{{ job.shortdescription }}</div>
+<div class="jobsearchmisc">{{ job.payrate }}</div>
+</div>
+
+{% endfor %}
 {% endblock %}

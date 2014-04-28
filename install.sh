@@ -1,7 +1,7 @@
 #!/bin/bash
 STARTDIR=$(pwd)
 VERSION=0.8.10
-echo "Enter the Chicago Boss Dir (if no dir is selected we will download chicagoboss into $HOME/chicagoboss)"
+echo "Enter the Chicago Boss Dir (if no dir is selected we will download chicagoboss into $HOME/ChicagoBoss-0.8.10)"
 read COMPILERDIR
 
 if [ "${COMPILERDIR}" > 3 ]
