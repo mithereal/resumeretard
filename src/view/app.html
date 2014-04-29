@@ -10,7 +10,7 @@
 	
 	<meta http-equiv="Content-Style-Type" content="text/css" />
 	<meta http-equiv="Content-Script-Type" content="text/javascript"/>
-	<script type="text/javascript" src="/static/js/geo.js"></script>
+	
 	
 	<meta property="fb:page_id" content="page_id will go here" />
 			
@@ -60,10 +60,18 @@
 				<li class="header-link"><a href="/recruit/">Post em Job</a></li>
 				<li class="header-link"><a href="/search/resumes">Find der Werker</a></li>
 			</ul>
+			<div id="">
+			<ul>
+				<li>
+					Home
+				</li>
+			</ul>
+			</div>
 	 </div>
 	 	 <div id="search">
 		 <form method="post" action="">
-		   <input type="text" id="searchinput" name="searchjobs" placeholder="Search for a job near you"/>
+		   <input type="text" id="searchinput" name="searchjobs" class="search" placeholder="Search for a job near you"/>
+		   <input type="text" id="searchlocation" name="searchlocation" class="search" placeholder="Tucson AZ"/>
 	       <button class="button">Search</button>
 	    </form>
 	   </div>
@@ -82,6 +90,7 @@
 				<li><a href="/information/privacy">privacy</a></li>
 				<li><a href="/information/terms">terms</a></li>
 				<li><a href="/information/help">help</a></li>
+				<li><a href="/508">Text Only (508)</a></li>
 			</ul>
 	</div>
 	
@@ -96,6 +105,6 @@
    <script src="/static/js/app.js"></script>
    <script src="/static/js/controllers.js"></script>
    <script src="/static/js/directives.js"></script>
-    <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=true"></script>
+    
   </body>
 </html>

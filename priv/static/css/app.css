@@ -199,19 +199,27 @@ text-align:left;
 	width:250px;
 }
 #registersubmit{
-	margin-left: 20em;
+margin-right:0.2em;
 }
 #search{
 	position:absolute;
 	left:16em;
 	z-index:3;
 	padding-top:1em;
+	margin-bottom:1em;
 }
 #searchinput{
 	width:30em;
+}
+.search{
 	height:1.5em;
 }
 #mapcontainer{ 
 margin-top:3em;
 margin-left:1.5em;
+height:200px;
+width:200px;
+}
+#newestjobsblock{
+	margin-left:1em;
 }
