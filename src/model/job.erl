@@ -1,4 +1,4 @@
--module(job,[Id,Title,Ownerid,Employerid,Created,Modified,Expires,Location,Subtitle]).
+-module(job,[Id,Title,Ownerid,Created,Modified,Expires,Location,Subtitle,Requirements,Benifets,Type,Description]).
 
 -compile(export_all).
 
@@ -9,7 +9,7 @@ latest()->
 create('POST', []) ->
 %%  Title = Request:param("title"),
 
-  Job = job:new(Id,Title,Employerid,Created,Modified,Expires,Location,Subtitle),
+  Job = job:new(Id,Title,Ownerid,Created,Modified,Expires,Location,Subtitle,Requirements,Benifets,Type,Description),
   Job:save(),
 
   {redirect, "/"}.
