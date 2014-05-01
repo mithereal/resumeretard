@@ -1,0 +1,47 @@
+{% extends "app.html" %}
+{% block content %}
+<div class="error">
+ {{ message }}
+</div>
+<h1>Recruit Wizard</h1> 
+<div>
+	Enter the details about the job offering.
+</div>
+<div>
+	<form Action="" Method="post">
+		<ol>
+			<li>
+			<label>Job Title</label>
+			<input type="text" name="jobtitle" id="jobtitle"/>
+			</li>
+			<li>
+			<label>Job Subtitle</label>
+			<input type="text" name"jobsubtitle" id="jobsubtitle"/>
+			</li>
+			<li>
+			<label>Job needs to be filled by</label>
+			<input type="text" name="jobexpires" id="jobexpires" />
+			</li>
+			<li>
+			<label>Job Description</label>
+			<textarea name="jobdescription" id="jobdescription"></textarea>
+			</li>
+			<li>
+			<label>Job Requirements</label>
+			<textarea id="jobrequirements" name="jobrequirements"></textarea>
+			</li>
+			<li>
+			<label>Job Benifets</label>
+			<textarea id="jobbenifets" name="jobbenifets"></textarea>
+			</li>
+			<li>
+			<label>Job Type</label>
+			</li>
+			<li>
+			<label>Job Location</label>
+			</li>
+		</ol>
+	</form>
+</div>
+
+{% endblock %}
