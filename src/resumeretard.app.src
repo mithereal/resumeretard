@@ -1,5 +1,5 @@
 {application, resumeretard, [
-        {description, "My Awesome Web Framework"},
+        {description, "Resume Retard (a job bank written in erlang)"},
         {vsn, "0.0.1"},
         {modules, []},
         {registered, []},

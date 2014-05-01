@@ -9,12 +9,12 @@
 <div>Newest Jobs</div>
 {% for newjob in newjobs %}
 <div>
+	{{ newjob.company.logo }}
 	{{ newjob.title }}
 	{{ newjob.created }}
 	{{ newjob.location }}
 	{{ newjob.subtitle }}
 	{{ newjob.company.name }}
-	{{ newjob.company.logo }}
 </div>
 {% endfor %}
 </div>

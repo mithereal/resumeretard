@@ -3,5 +3,15 @@
 <div class="error">
  {{ message }}
 </div>
-resume results goes here
+
+{% for resume in resumes %}
+<div id="resumesquare" class="card">
+<div id="resumeowner">{{ resume.owner }}</div>
+<div id="resumesearchname">{{ resume.title }}</div>
+<div id="resumesearchdescription">{{ resume.shortdescription }}</div>
+<div id="resumekeywords">{{ resume.keywords }}</div>
+</div>
+
+{% endfor %}
+
 {% endblock %}
