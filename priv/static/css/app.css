@@ -214,16 +214,29 @@ margin-right:0.2em;
 .search{
 	height:1.5em;
 }
-#mapcontainer{ 
-margin-top:3em;
-margin-left:1.5em;
+#leftmapcontainer{ 
+margin:1em;
 height:200px;
 width:200px;
+display:inline-block;
+}
+#rightmapcontainer{ 
+margin:1em;
+height:200px;
+width:200px;
+display:inline-block;
 }
 #newestjobsblock{
 	margin-left:1em;
+	max-width:40%;
 }
 #dynacloud{
 	height:200px;
 	width:200px;
+	float:right;
+}
+#jobsmap{
+margin-top:3em;
+margin-left:8em;
+
 }
