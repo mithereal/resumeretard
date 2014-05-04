@@ -4,7 +4,7 @@
  {{ message }}
 </div>
 
-<div id="search">
+<section id="search">
 	<div id="searchbox">
 		 <form method="post" action="">
 		   <input type="text" id="searchinput" name="searchjobs" class="search" placeholder="Search for a job near you"/>
@@ -17,18 +17,18 @@
 	       </div>
 	    </form>
 	   </div>
-  </div>
+</section>
  
-<article id="jobsmap"></article>
-<article id="dynacloud">
+<section id="jobsmap"></section>
+<section id="dynacloud">
 Employers are searching for
 {% for search in searches %}
 <div class="dynacloud">
 {{ search.term }}
 </div>
 {% endfor %}
-</article>
-<aritcle id="newestjobsblock">
+</section>
+<section id="newestjobsblock">
 <div>Newest Jobs</div>
 {% for newjob in newjobs %}
 <div>
@@ -40,7 +40,7 @@ Employers are searching for
 	{{ newjob.company.name }}
 </div>
 {% endfor %}
-</aritcle>
+</section>
 
 <script type="text/javascript" src="/static/js/geo.js"></script>
 <script type="text/javascript" src="/static/js/dynacloud.js"></script>

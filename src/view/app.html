@@ -31,12 +31,14 @@
   
   <body ng-app="resumeretard" ng-strict-di>
 	
-	  <div id="site-header" ng-controller="resumeretardHeaderController">
+	  <header id="site-header" ng-controller="resumeretardHeaderController">
+		  
 		  <div id="sitelogo">
 		  	<a href="/">
 			<img src="/static/image/sitelogo.png">
 			</a>
-			</div>
+		  </div>
+		  
 			<div id="header-account">
 				{% if user %}
 				<p> Welcome {{ user.username }} </p>
@@ -52,27 +54,29 @@
 				{% endif %}
 			</div>
 			
-			<div class="header-links">
+			<nav class="header-links">
 			<ul>
 				<li class="header-link selected"><a href="/search/jobs">Search / $</a></li>
 				<li class="header-link"><a href="/recruit/">Post em Job</a></li>
 				<li class="header-link"><a href="/search/resumes">Find der Werker</a></li>
 			</ul>
-	 </div>
+	 </nav>
+	 
 	<div id="header-nav">
 			<nav>
-				<a href="/html/">Home</a> |
+				
 			</nav>
-			</div>
+	</div>
+	</header>
 	 
-	 <section id ="content-wrapper">
-	<article id="lgutter"></article> 
+	<article id="content-wrapper">
+	<section id="lgutter"></section> 
     {% block content %}{% endblock %}
-    <article id="rgutter"></article>
-    </section>
+    <section id="rgutter"></section>
+    </article>
 
   <footer>
-	  <div class="site-links">
+	  <nav class="site-links">
 			<ul>
 				<li><a href="/sitemap">site map</a></li>
 				<li><a href="/information/privacy">privacy</a></li>
@@ -80,16 +84,17 @@
 				<li><a href="/information/help">help</a></li>
 				<li><a href="/508">Text Only (508)</a></li>
 			</ul>
-	</div>
+	  </nav>
 	
-	<article class="copyright">
+	<div class="copyright">
 	Copyright &copy;2014 Jason Clark. All rights reserved.
 	<a href="https://github.com/mithereal/resumeretard">
 	<img width="24" height="15" valign="bottom" src="/static/image/sitelogo.png">
 	</a>
-	</article>
+	</div>
 
   </footer>
+  
    <script src="/static/js/app.js"></script>
    <script src="/static/js/controllers.js"></script>
    <script src="/static/js/directives.js"></script>
