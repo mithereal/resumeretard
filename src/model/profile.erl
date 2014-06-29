@@ -1,2 +1,2 @@
--module(profile,[Id,Username,FirstName,LastName]).
+-module(profile,[Id,Username,FirstName,LastName,Member_Id]).
 -compile(export_all).

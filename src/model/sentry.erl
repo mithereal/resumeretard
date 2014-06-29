@@ -1,4 +1,4 @@
--module(ward_boss, [Id, Name, PasswordHash]).
+-module(sentry, [Id, Name, PasswordHash]).
 -define(SECRET_STRING, "Not telling secrets!").
 
 session_identifier() ->

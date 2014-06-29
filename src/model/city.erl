@@ -1,2 +1,2 @@
--module(jobtype,[Id,Type]).
+-module(city,[Id,Type]).
 -compile(export_all).

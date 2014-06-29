@@ -1,0 +1,2 @@
+-module(categorytokobtype,[Id,Type]).
+-compile(export_all).

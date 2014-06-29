@@ -271,3 +271,6 @@ filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#
 	position:relative;
 	margin:auto;
 }
+#loginform{
+	list-style-type: none;
+}

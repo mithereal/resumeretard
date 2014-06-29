@@ -1,0 +1,2 @@
+-module(keywordtoportfolio,[Id,Keyword,Category]).
+-compile(export_all).

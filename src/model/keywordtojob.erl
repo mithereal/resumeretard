@@ -1,0 +1,2 @@
+-module(keywordtojob,[Id,Keyword,Category]).
+-compile(export_all).
