@@ -9,7 +9,8 @@ check_password(Password) ->
     user_lib:hash_password(Password, Salt) =:= PasswordHash.
 
 login_cookies() ->
-    [ mochiweb_cookies:cookie("user_id", Id, [{path, "/"}]),
+    [ mochiweb_cookies:cookie("member_id", Id, [{path, "/"}]),
         mochiweb_cookies:cookie("session_id", session_identifier(), [{path, "/"}]) ].
-        
-        
+
+check_cryptpass(PasswordAttempt) ->
+   Password =:= bcrypt:hashpw(PasswordAttempt, Password).
