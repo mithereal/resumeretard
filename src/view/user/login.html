@@ -20,7 +20,7 @@
 <button id="submit" class="button">Log in</button>
 </li>
 </ol>
-
+<input type="hidden" name="redirect" value="{{ redirect|default_if_none:"/" }}" />
 </form>
 </div>
 {% endblock %}
