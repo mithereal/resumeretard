@@ -15,6 +15,7 @@
 
 % Front page
  {"/", [{controller, "main"}, {action, "index"}]}.
+ {"/member/list", [{controller, "user"}, {action, "list"}]}.
  {"/version", [{controller, "application"}, {action, "version"}]}.
  {"/search/", [{controller, "search"}, {action, "index"}]}.
  {"/search/resumes", [{controller, "search"}, {action, "portfolios"}]}.
@@ -25,6 +26,7 @@
  {"/sign-up", [{controller, "registration"}, {action, "index"}]}.
  {"/sitemap", [{controller, "main"}, {action, "sitemap"}]}.
  {"/information/", [{controller, "page"}, {action, "index"}]}.
+ {"/cron", [{controller, "cron"}, {action, "version"}]}.
 
 
 % 404 File Not Found handler

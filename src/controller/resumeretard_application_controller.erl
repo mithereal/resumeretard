@@ -5,4 +5,6 @@ lost('GET', []) ->
     {ok, [{message,"unable to find page"}]}.
     
 version('GET', []) ->
-    {ok, [{version,"0.1"}]}.
+	Version=os:cmd("git log | grep '^commit' | head -n 1 | sed 's/commit //'"),
+    {ok, [{version,Version}]}.
+

@@ -1,0 +1,13 @@
+{% extends "app.html" %}
+{% block content %}
+{% if error %}
+<font color="red">{{ error }}</font>
+{% endif %}
+<div>
+	<ol>
+{% for user in users %}
+<li>{{ user.username }}</li>
+{% endfor %}
+</ol>
+</div>
+{% endblock %}

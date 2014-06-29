@@ -19,3 +19,6 @@ login('POST', []) ->
             {ok, [{error, "No Member named " ++ Username}]}
     end.
 
+list('GET', []) ->
+	Users = boss_db:find(member, []),
+	{ok, [{users, Users}]}.
