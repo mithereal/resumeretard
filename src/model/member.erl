@@ -12,5 +12,5 @@ login_cookies() ->
     [ mochiweb_cookies:cookie("member_id", Id, [{path, "/"}]),
         mochiweb_cookies:cookie("session_id", session_identifier(), [{path, "/"}]) ].
 
-check_cryptpass(PasswordAttempt) ->
-   Password =:= bcrypt:hashpw(PasswordAttempt, Password).
+%check_cryptpass(PasswordAttempt) ->
+%   Password =:= bcrypt:hashpw(PasswordAttempt, Password).
