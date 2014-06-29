@@ -5,5 +5,4 @@ lost('GET', []) ->
     {ok, [{message,"unable to find page"}]}.
     
 version('GET', []) ->
-appver = application:get_env(resumeretard, vsn).
-    {ok, [{version,appver}]}.
+    {ok, [{version,"0.1"}]}.
