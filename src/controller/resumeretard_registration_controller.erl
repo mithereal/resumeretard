@@ -13,7 +13,10 @@ register('GET', []) ->
 register('POST', []) ->
     Email = Req:post_param("email"),
     Username = Req:post_param("username"),
-    Password = bcrypt:hashpw(Req:post_param("password"),bcrypt:gen_salt()),
-    Member = member:new(id, Username, Password ),
+    Key = member:random_string(20),
+    Status = "unconfirmed",
+    Password = user_lib:hash_password(Req:post_param("password")),
+    Member = member:new(id, Username, Email, Password, Key, Status ),
     Result = Member:save(),
     {ok, [Result]}.
+    

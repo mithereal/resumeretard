@@ -3,8 +3,8 @@
 -compile(export_all).
 
 latest()->
- %%Test1 = boss_db:find(job, []).
- {output,"ok"}.
+ Data = boss_db:find(job, []).
+ %%{output,[{latestjobs,Data}]}.
 
 create('POST', []) ->
 %%  Title = Request:param("title"),

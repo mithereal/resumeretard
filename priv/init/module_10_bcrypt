@@ -1,0 +1,17 @@
+%% file: priv/init/module_10_bcrypt.erl
+-module(module_10_bcrypt). 
+-export([init/0, stop/0]). 
+
+%% We need to manually start the bcrypt application.
+%% @TODO: figure out how to get this to run via boss.config.
+init() -> 
+    %% Uncomment the following line if your CB app doesn't start crypto on its own
+    %%crypto:start(),
+    bcrypt:start(). 
+
+stop() -> 
+    %bcrypt:stop(). 
+    %% Comment the above and uncomment the following lines 
+    %% if your CB app doesn't start crypto on its own
+     bcrypt:stop(),
+   % crypto:stop().
