@@ -1,2 +1,2 @@
--module(categorytokobtype,[Id,Type]).
+-module(categorytojobtype,[Id,Type]).
 -compile(export_all).

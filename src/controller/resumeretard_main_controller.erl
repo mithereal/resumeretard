@@ -2,12 +2,8 @@
 -compile(export_all).
 
 index('GET', []) ->
-Newjobs=boss_db:find(job, []),
-    {ok,  [newjobs,Newjobs]}.
+Jobs = boss_db:find(job, []),
+    {ok,  [{jobs,Jobs}]}.
     
 sitemap('GET', []) ->
     {ok,  []}.
-
-
-
-

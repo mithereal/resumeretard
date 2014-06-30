@@ -68,21 +68,84 @@
 			</nav>
 	</div>
 	</header>
-	 
-	<article id="content-wrapper">
-	<section id="lgutter"></section> 
-    {% block content %}{% endblock %}
-    <section id="rgutter"></section>
-    </article>
+	<section id="search">
+	<div id="searchbox">
+		 <form method="post" action="">
+		   <input type="text" id="searchinput" name="searchjobs" class="search" placeholder="Search for a job near you"/>
+		   <input type="text" id="searchlocation" name="searchlocation" class="search" placeholder="Tucson AZ"/>
+	       <div>
+	       <button id="searchbutton" class="button">Search</button> <span>Advanced Search</span>
+	       </div>
+	    </form>
+	   </div>
+</section>
+
+<section id="content-wrapper">
+	
+<section id="lgutter">
+	
+<section id="categories">
+Categories
+{% for category in categories %}
+<div class="category">
+{{ category.name }}
+</div>
+{% endfor %}
+</section>
+
+<section id="filter">
+Sort By :
+
+<b>relevance</b>
+-
+<b>date</b>
+
+<div class="distance">
+
+</div>
+
+<div class="salary">
+
+</div>
+
+</section>
+
+</section> 
+
+{% block content %}{% endblock %}
+
+<section id="rgutter">
+	
+<section id="dynacloud">
+Employers are searching for
+{% for esearch in esearches %}
+<div class="dynacloud">
+{{ esearch.term }}
+</div>
+{% endfor %}
+</section>
+
+<section id="recentsearch">
+My Recent Searches
+{% for search in searches %}
+<div class="recentsearch">
+{{ search.term }}
+</div>
+{% endfor %}
+</section>
+
+</section>
+
+</section>
 
   <footer>
 	  <nav class="site-links">
 			<ul>
-				<li><a href="/sitemap">site map</a></li>
-				<li><a href="/information/privacy">privacy</a></li>
-				<li><a href="/information/terms">terms</a></li>
-				<li><a href="/information/help">help</a></li>
-				<li><a href="/508">Text Only (508)</a></li>
+				<li><a href="/sitemap">Site Map</a></li>
+				<li><a href="/information/privacy">Privacy</a></li>
+				<li><a href="/information/terms">Terms</a></li>
+				<li><a href="/information/help">Help</a></li>
+				<li><a href="/508">Text Only</a></li>
 			</ul>
 	  </nav>
 	

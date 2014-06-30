@@ -3,44 +3,9 @@
 <div class="error">
  {{ message }}
 </div>
-
-<section id="search">
-	<div id="searchbox">
-		 <form method="post" action="">
-		   <input type="text" id="searchinput" name="searchjobs" class="search" placeholder="Search for a job near you"/>
-		   <input type="text" id="searchlocation" name="searchlocation" class="search" placeholder="Tucson AZ"/>
-	       <div>
-	       <select name="category"> 
-	       <option>Select a job Category</option>
-	       </select>
-	       <button id="searchbutton" class="button">Search</button>
-	       </div>
-	    </form>
-	   </div>
-</section>
  
 <section id="jobsmap"></section>
-<section id="dynacloud">
-Employers are searching for
-{% for search in searches %}
-<div class="dynacloud">
-{{ search.term }}
-</div>
-{% endfor %}
-</section>
-<section id="newestjobsblock">
-<div>Newest Jobs</div>
-{% for newjob in newjobs %}
-<div>
-	{{ newjob.company.logo }}
-	{{ newjob.title }}
-	{{ newjob.created }}
-	{{ newjob.location }}
-	{{ newjob.subtitle }}
-	{{ newjob.company.name }}
-</div>
-{% endfor %}
-</section>
+
 
 <script type="text/javascript" src="/static/js/geo.js"></script>
 <script type="text/javascript" src="/static/js/dynacloud.js"></script>

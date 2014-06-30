@@ -206,10 +206,10 @@ margin-right:0.2em;
 }
 #search{
 position:relative;
-margin-left:16em;
 z-index:3;
 padding-top:1em;
-margin-bottom:1dynacloudem;
+padding-bottom:1em;
+background-color: #2855a2;
 }
 #searchinput{
 width:30em;
@@ -264,12 +264,13 @@ background-image: linear-gradient(to bottom, #FFC92B, #AD9D68);
 filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#FFC92B, endColorstr=#AD9D68);
 }
 #searchbutton{
-	position:absolute;
-	right:26.4em;
+ left: 51.4em;
+    position: relative;
 }
 #searchbox{
-	position:relative;
-	margin:auto;
+margin: auto;
+    position: relative;
+    width: 60%;
 }
 #loginform{
 	list-style-type: none;
