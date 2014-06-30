@@ -17,6 +17,8 @@
  {"/", [{controller, "main"}, {action, "index"}]}.
  {"/member/list", [{controller, "user"}, {action, "list"}]}.
  {"/home", [{controller, "home"}, {action, "index"}]}.
+ {"/job/new", [{controller, "job"}, {action, "create"}]}.
+ {"/jobs/list", [{controller, "job"}, {action, "list"}]}.
  {"/version", [{controller, "application"}, {action, "version"}]}.
  {"/search/", [{controller, "search"}, {action, "index"}]}.
  {"/search/resumes", [{controller, "search"}, {action, "portfolios"}]}.

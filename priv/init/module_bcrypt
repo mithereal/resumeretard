@@ -1,4 +1,4 @@
--module(module_10_bcrypt). 
+-module(module_bcrypt). 
 -export([init/0, stop/0]). 
 
 %% We need to manually start the bcrypt application.

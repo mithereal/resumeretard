@@ -1,0 +1,56 @@
+{% extends "plain.html" %}
+{% block content %}
+<div class="error">
+ {{ message }}
+</div>
+
+<section id="jobs" class="">
+List of Jobs
+{% for job in jobs %}
+<div class="job card">
+<div>
+<label for="title">Title:</label>
+	{{ job.title }}
+</div>
+<div>
+	<label for="title">Description:</label>
+{{ job.description }}
+</div>
+<div>
+	<label for="title">Compensation:</label>
+{{ job.payrate }}
+</div>
+<div>
+	<label for="title">Benifets:</label>
+{{ job.benifets }}
+</div>
+<div>
+	<label for="title">Posted:</label>
+{{ job.created }}
+</div>
+<div>
+	<label for="title">To Be Filled By:</label>
+{{ job.expires }}
+</div>
+<div>
+	<label for="title">Location:</label>
+{{ job.location }}
+</div>
+<div>
+	<label for="title">Requirements:</label>
+{{ job.requirements }}
+</div>
+<div>
+	<label for="title">Subtitle:</label>
+{{ job.subtitle }}
+</div>
+<div>
+	<label for="title">Type:</label>
+{{ job.type }}
+</div>
+
+</div>
+{% endfor %}
+</section>
+
+{% endblock %}

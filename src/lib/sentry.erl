@@ -1,4 +1,4 @@
--module(user_lib).
+-module(sentry).
 -compile(export_all).
 
 %% On success, returns {ok, Hash}.
@@ -30,3 +30,11 @@ require_login(Req) ->
                     end
             end
      end.
+
+random_string(Length) ->
+	AllowedChars="1234567890qwertyuiopasdfghjklzxcvbnm",
+    lists:foldl(fun(_, Acc) ->
+                        [lists:nth(random:uniform(length(AllowedChars)),
+                                   AllowedChars)]
+                            ++ Acc
+                end, [], lists:seq(1, Length)).
