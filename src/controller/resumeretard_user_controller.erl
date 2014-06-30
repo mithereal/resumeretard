@@ -8,10 +8,11 @@ login('POST', []) ->
     Username = Req:post_param("username"),
     case boss_db:find(member, [{username, 'equals', Username}]) of
         [Member] ->
-            case Member:check_password(Req:post_param("password")) of
+            case Member:check_password(Username,Req:post_param("password")) of
                 true ->
-                    {redirect, proplists:get_value("redirect",
-                        Req:post_params(), "/"), Member:login_cookies()};
+                 {ok, [{error, "woot"}]};
+                   %% {redirect, proplists:get_value("redirect",
+                     %%   Req:post_params(), "/"), Member:login_cookies()};
                 false ->
                     {ok, [{error, "Bad name/password combination"}]}
             end;

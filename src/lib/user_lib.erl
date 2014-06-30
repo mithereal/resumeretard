@@ -15,6 +15,7 @@ hash_for(Name, Password) ->
 
 %compare_password(PasswordAttempt, Password) ->
 %    {ok, Password} =:= bcrypt:hashpw(PasswordAttempt, Password).
+
     
 require_login(Req) ->
     case Req:cookie("member_id") of
