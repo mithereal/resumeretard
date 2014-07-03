@@ -2,6 +2,8 @@
 
 A career search engine (job bank) written in Erlang
 
+Erlang was chosen due to how it scales, which should make this a cheaper solution alltogether.
+
 
 Credits
 -------
