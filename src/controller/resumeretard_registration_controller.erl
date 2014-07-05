@@ -16,7 +16,7 @@ register('POST', []) ->
     Key = member:random_string(20),
     Status = "unconfirmed",
     Password = user_lib:hash_password(Req:post_param("password")),
-    Member = member:new(id, Username, Email, Password, Key, Status ),
+    Member = member:new( {id,id}, {username,Username},{email,Email} ,  {password,Password}, {key,Key},  {status,Status} ),
     Result = Member:save(),
     {ok, [Result]}.
     
