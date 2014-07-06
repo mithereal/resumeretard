@@ -6,13 +6,14 @@ login('GET', []) ->
     
 login('POST', []) ->
     Username = Req:post_param("username"),
+    Password = Req:post_param("password"),
     case boss_db:find(member, [{username, 'equals', Username}]) of
         [Member] ->
-            case Member:check_password(Username,Req:post_param("password")) of
+            case sentry:check_password(Username,Password) of
                 true ->
-                 {ok, [{error, "woot"}]};
+                 {ok, [{error, "password is correct"}]};
                    %% {redirect, proplists:get_value("redirect",
-                     %%   Req:post_params(), "/"), Member:login_cookies()};
+                     %%   Req:post_params(), "/"), sentry:login_cookies()};
                 false ->
                     {ok, [{error, "Bad name/password combination"}]}
             end;
