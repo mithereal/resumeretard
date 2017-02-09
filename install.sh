@@ -23,7 +23,7 @@ fi
 
 ## fetch and install chicagoboss
 cd ${CBBDIR}
-wget https://github.com/ChicagoBoss/ChicagoBoss/archive/v"${VERSION}".tar.gz
+wget https://github.com/ChicagoBoss/ChicagoBoss/releases/v"${VERSION}".tar.gz
 tar -xvzf v"${VERSION}".tar.gz
 
 if [ -z "$OVERWRITE" ]
