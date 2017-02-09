@@ -48,7 +48,7 @@ cd ${STARTDIR}
 function help()
 {
     echo ""
-    echo "${PROJECT_NAME} Installer by ${CREATOR}"
+    echo "$PROJECT_NAME Installer by $CREATOR"
     echo ""
     echo "Usage: install $DESTINATION_HELP "
     echo $VERSION_HELP
