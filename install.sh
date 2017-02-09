@@ -4,7 +4,8 @@ VERSION=0.8.12
 DESTINATION_HELP='-d Chicago Boss destination path'
 VERSION_HELP='-v sets the Chicago Boss Project version'
 OVERWRITE_HELP='-u will overwrite if ChicagoBoss exists and install in default dir ChicagoBoss (skips versioning, aka upgrade)'
-
+PROJECT_NAME='Resume Retard'
+CREATOR='Jason Clark <mithereal@gmail.com>'
 function install()
 {
   if [ -z "$COMPILERDIR" ]
@@ -47,7 +48,7 @@ cd ${STARTDIR}
 function help()
 {
     echo ""
-    echo "Resume Retard Installer by Jason Clark <mithereal@gmail.com>"
+    echo "${PROJECT_NAME} Installer by ${CREATOR}"
     echo ""
     echo "Usage: install $DESTINATION_HELP "
     echo $VERSION_HELP
